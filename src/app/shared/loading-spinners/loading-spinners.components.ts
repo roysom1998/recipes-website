@@ -5,6 +5,4 @@ import { Component } from "@angular/core";
     '<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>',
     styleUrls:['./loading-spinners.components.css']
 })
-export class LoadingSpinners{
-
-}
+export class LoadingSpinners{}

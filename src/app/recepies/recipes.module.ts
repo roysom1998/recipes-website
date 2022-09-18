@@ -8,8 +8,9 @@ import { RecipeStartComponent } from './recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+// import { CommonModule } from '@angular/common';
 import { RecipesRoutingModule } from './recipes-routing.module';
+import { sharedModules } from '../shared/shared.module';
 // a module can be used only within that module
 // so we need to export the components which we have to use in some other modules.
 
@@ -24,18 +25,19 @@ import { RecipesRoutingModule } from './recipes-routing.module';
     ],
     imports:[RouterModule,
         ReactiveFormsModule,
-        CommonModule,
+        // CommonModule,
         FormsModule,
-        RecipesRoutingModule
-    ],
-    exports:[
-        RecepiesComponent,
-        RecipeListComponent,
-        RecipeDetailsComponent,
-        RecipeItemsComponent,
-        RecipeStartComponent,
-        RecipeEditComponent
+        RecipesRoutingModule,
+        sharedModules
     ]
+    // exports:[
+    //     RecepiesComponent,
+    //     RecipeListComponent,
+    //     RecipeDetailsComponent,
+    //     RecipeItemsComponent,
+    //     RecipeStartComponent,
+    //     RecipeEditComponent
+    // ]
 })
 
 export class RecipesModules{}
